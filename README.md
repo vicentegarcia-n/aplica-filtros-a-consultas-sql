@@ -17,53 +17,48 @@ Este proyecto demuestra la aplicación de consultas SQL con filtros para analiza
    ```sql
    SELECT *
    FROM log_in_attempts
-   WHERE login_time > '18:00' AND success = FALSE;```
-
+   WHERE login_time > '18:00' AND success = FALSE;
+   ```
   - Permite detectar posibles ataques o accesos indebidos después de la jornada laboral.
   
 2. **📅 Filtrar intentos de inicio de sesión en fechas específicas:**
-sql
-  
-SELECT *
-FROM log_in_attempts
-WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
-
+   ```sql
+   SELECT *
+   FROM log_in_attempts
+   WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
+   ```
   - Útil para investigar eventos sospechosos en fechas concretas.
 
 3. **🌍 Detectar intentos de inicio de sesión fuera de México:**
-sql
-
-SELECT *
-FROM log_in_attempts
-WHERE NOT country LIKE 'MEX%';
-
+   ```sql
+   SELECT *
+   FROM log_in_attempts
+   WHERE NOT country LIKE 'MEX%';
+   ```
   - Identifica inicios de sesión desde ubicaciones no autorizadas.
 
 4. **🏢 Recuperar empleados del departamento de Marketing en el edificio Este:**
-sql
-
-SELECT *
-FROM employees
-WHERE department = 'Marketing' AND office LIKE 'East%';
-
+   ```sql 
+   SELECT *
+   FROM employees
+   WHERE department = 'Marketing' AND office LIKE 'East%';
+   ```
   - Filtra empleados de un departamento específico en una sede particular.
 
 5. **💼 Obtener empleados de Finanzas o Ventas:**
-sql
-
-SELECT *
-FROM employees
-WHERE department = 'Finance' OR department = 'Sales';
-
+   ```sql
+   SELECT *
+   FROM employees
+   WHERE department = 'Finance' OR department = 'Sales';
+   ```
   - Agrupa empleados de diferentes departamentos para aplicar medidas de seguridad.
 
 6. **🛑 Excluir empleados del departamento de TI:**
-sql
-
-SELECT *
-FROM employees
-WHERE NOT department = 'Information Technology';
-
+   ```sql
+   SELECT *
+   FROM employees
+   WHERE NOT department = 'Information Technology';
+   ```
   - Permite actualizar equipos de todos los empleados excepto los de TI.
 
 **🛠️ Herramientas utilizadas:**  
