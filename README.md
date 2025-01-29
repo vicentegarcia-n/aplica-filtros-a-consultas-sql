@@ -65,3 +65,13 @@ FROM employees
 WHERE NOT department = 'Information Technology';
 
   - Permite actualizar equipos de todos los empleados excepto los de TI.
+
+**🛠️ Herramientas utilizadas:**  
+- SQL (MySQL, PostgreSQL o SQLite) para ejecutar consultas.
+- Operadores lógicos (`AND`, `OR`, `NOT`) para filtrar información.
+- Expresiones con `LIKE` y comodín `%` para búsquedas flexibles.
+
+**📌 Aprendizajes clave:** 
+- Cómo utilizar SQL para extraer información de bases de datos de seguridad.
+- Uso de filtros avanzados para detectar patrones de actividad sospechosa.
+- Aplicación de operadores lógicos para optimizar consultas.
